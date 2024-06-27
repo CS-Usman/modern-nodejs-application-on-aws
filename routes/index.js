@@ -1,8 +1,8 @@
 import express from "express";
-import apiRouter from "./api.routes.js"
+import bucketApiRouter from "./api.routes.js";
 
 const router = express.Router();
 
-router.use("/", apiRouter);
+router.use("/bucket", bucketApiRouter);
 
 export default router;
